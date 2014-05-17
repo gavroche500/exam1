@@ -13,7 +13,7 @@
   以下のコマンドが表示されるので、ローカル側で打ち込む
   ――――――――――――――――――――――――――
    Create a new repository on the command line
-  
+
   touch README.md
   git init
   git add README.md
