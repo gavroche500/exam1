@@ -181,5 +181,7 @@
   
 11. コミットを見失ってしまった。探したい
 
+コマンド
 
+$ git reflog show <branch_name>
 
