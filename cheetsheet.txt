@@ -158,6 +158,30 @@
     -L <n,m:file>         Process line range n,m in file, counting from 1
 
 
+11. コミットを見失ってしまった。探したい
+
+コマンド
+
+$ git reflog show <branch_name>
+
+説明
+
+ブランチが作成されてから、現在までの変更履歴を表示します。
+ブランチでresetやrebaseをした後でも、reset前やrebase前の情報はgit内に残っています。
+
+その他の情報
+
+現在のブランチから辿れないリビジョンの一覧はfsckでも表示できる。
+
+$ git fsck --lost-found
+
+一覧に表示された"commit"オブジェクトを表示していけば、復元したいリビジョンを復元できる。
+
+$ git show <sha-1>
+
+見つかったら、ブランチを作ってあげれば扱い易くなるよ。
+
+$ git branch restore_branch <sha-1>
 
 13． 現在の状態を確認する
 コマンド:
@@ -192,7 +216,3 @@
   説明:
   リポジトリの状態によって以下のようなメッセージが出力される。
   
-11. コミットを見失ってしまった。探したい
-
-
-
