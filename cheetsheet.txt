@@ -1,3 +1,6 @@
 
 4, 既存のファイルに加わった変更を登録したい
+  コマンド
+    git add /path/to/file
+    git commit -m "COMMIT_MESSAGE"
 
