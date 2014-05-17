@@ -1,1 +1,4 @@
 3.新しいファイルを管理に加えたい
+$ git add filename
+$ git commit -m "commit comment"
+$ git push
