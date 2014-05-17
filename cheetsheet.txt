@@ -1,0 +1,26 @@
+―――――― 1. リポジトリの新規作成 ―――――――
+
+【コマンド】
+  git init [リポジトリ名]
+
+2. 作業方法
+
+
+【関連情報】
+  リモートリポジトリの作成
+   GithubのWeb画面からの作業
+   [GitHub]のトップ画面から以下のように遷移
+   [Repositories]→[New]ボタン をクリックする。
+   [Repository name]に作成するリポジトリ名を入力し、[Create repository]をクリックする。
+
+  以下のコマンドが表示されるので、ローカル側で打ち込む
+  ――――――――――――――――――――――――――
+   Create a new repository on the command line
+  
+  touch README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git remote add origin https://github.com/gavroche500/exam1.git
+  git push -u origin master
+  ――――――――――――――――――――――――――
