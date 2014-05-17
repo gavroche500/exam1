@@ -145,6 +145,19 @@
     このコマンドをそのまま叩きましょう。
     そのままです。そのまま。OK?
 
+10. 過去のコミットメッセージを確認
+  コマンド
+   git log  
+  説明
+   リモートリポジトリへのpushログを確認できる。
+   以下のオプションがある。
+    --quiet               suppress diff output
+    --source              show source
+    --use-mailmap         Use mail map file
+    --decorate[=...]      decorate options
+    -L <n,m:file>         Process line range n,m in file, counting from 1
+
+
 
 13． 現在の状態を確認する
 コマンド:
