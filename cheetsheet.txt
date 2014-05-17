@@ -85,6 +85,9 @@
     $ git checkout -b <hoge> <some-revision>
 
 8, 作業していたら他の人がpushしていた. どうにかしたい
+  コマンド
+    git fetch remote_name
+    git merge remote_name/branch_name
 
 6. ファイルを移動した事を登録したい
   コマンド
