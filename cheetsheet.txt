@@ -1,3 +1,30 @@
+―――――― 1. リポジトリの新規作成 ―――――――
+
+【コマンド】
+  git init [リポジトリ名]
+
+2. 作業方法
+
+
+【関連情報】
+  リモートリポジトリの作成
+   GithubのWeb画面からの作業
+   [GitHub]のトップ画面から以下のように遷移
+   [Repositories]→[New]ボタン をクリックする。
+   [Repository name]に作成するリポジトリ名を入力し、[Create repository]をクリックする。
+
+  以下のコマンドが表示されるので、ローカル側で打ち込む
+  ――――――――――――――――――――――――――
+   Create a new repository on the command line
+  
+  touch README.md
+  git init
+  git add README.md
+  git commit -m "first commit"
+  git remote add origin https://github.com/gavroche500/exam1.git
+  git push -u origin master
+  ――――――――――――――――――――――――――
+
 2.既に存在するリポジトリを手元に持ってきたい時
 
 　コマンド：
@@ -43,4 +70,19 @@ $ git rm <file_name>
 $ git add -A -- <file_name>
 
 で削除した情報をコミット対象に追加できるよ
->>>>>>> origin/master
+
+9, 直前のコミットメッセージのtypoに気付いた. 直したい
+  コマンド
+    git commit --amend
+    (エディタが出てくるのでそこでコミットメッセージを編集)
+  説明
+    より厳密に言うのであれば、
+      - 現在コミット対象にされているファイル
+      - 直前のコミットで編集されたファイル
+    これらを含み「直前のコミットの親を親とするコミット」を作成する。
+    なのでgit addされたファイルとかあったりするとそれも含まれる。
+  その他の情報
+    出てくるエディタは設定可能で、その場合は以下のようにする。
+      git config --global core.editor emacs
+    このコマンドをそのまま叩きましょう。
+    そのままです。そのまま。OK?
