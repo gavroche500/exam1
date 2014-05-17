@@ -185,3 +185,8 @@
 
 $ git reflog show <branch_name>
 
+説明
+
+ブランチが作成されてから、現在までの変更履歴を全て表示します。
+ブランチでresetやrebaseをした後でも、reset前やrebase前の情報はgit内に残っています。
+
