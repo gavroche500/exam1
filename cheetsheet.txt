@@ -1,0 +1,9 @@
+2.既に存在するリポジトリを手元に持ってきたい時
+
+　コマンド：
+　　$> git clone <クローン元のリポジトリ> <クローン先>
+
+　説明：
+　　既に存在するリポジトリをコピー（クローン）するためのコマンド。
+
+　　例）$> git clone https://github.com/gavroche500/exam1 /hogehoge/exam1
