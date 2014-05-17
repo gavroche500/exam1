@@ -86,3 +86,8 @@ $ git add -A -- <file_name>
       git config --global core.editor emacs
     このコマンドをそのまま叩きましょう。
     そのままです。そのまま。OK?
+
+11. コミットを見失ってしまった。探したい
+
+
+
