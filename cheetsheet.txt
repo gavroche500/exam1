@@ -190,3 +190,17 @@ $ git reflog show <branch_name>
 ブランチが作成されてから、現在までの変更履歴を全て表示します。
 ブランチでresetやrebaseをした後でも、reset前やrebase前の情報はgit内に残っています。
 
+その他の情報
+
+現在のブランチから辿れないコミットの一覧はfsckでも表示できる。
+
+$ git fsck --lost-found
+
+一覧に表示された"commit"オブジェクトを表示していけば、復元したいコミットを復元できる。
+
+$ giw show <sha-1>
+
+見つかったら、ブランチを作ってあげれば扱い易くなるよ。
+
+$ git branch restore_branch <sha-1>
+
