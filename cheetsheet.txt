@@ -33,7 +33,7 @@
 　　例）$> git clone https://github.com/gavroche500/exam1 /hogehoge/exam1
 
 3.新しいファイルを管理に加えたい
-  タイトル
+  コマンド
     $ git add path/to/file
     $ git commit -m "commit comment"
   説明
