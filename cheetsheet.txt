@@ -82,7 +82,7 @@
 
   その他情報
     特定のリビジョンからブランチを作成するには、
-    $ git checkout -b <hoge> <some-commit>
+    $ git checkout -b <hoge> <some-revision>
 
 
 6. ファイルを移動した事を登録したい
