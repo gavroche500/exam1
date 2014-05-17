@@ -7,3 +7,15 @@
 　　既に存在するリポジトリをコピー（クローン）するためのコマンド。
 
 　　例）$> git clone https://github.com/gavroche500/exam1 /hogehoge/exam1
+
+4, 既存のファイルに加わった変更を登録したい
+  コマンド
+    git add /path/to/file
+    git commit -m "COMMIT_MESSAGE"
+  説明
+    基本形は上記の通りで、addコマンドを実行後にcommitする。
+    addコマンドはこの形だとファイルを指定しているが、ディレクトリを指定するとそのディレクトリ毎コミット対象にできる。
+  その他の情報
+    addコマンドにはallやupdateのオプションがあり、これを行っておくとgit rmとかする必要が無かったりするので非常に楽だったりする。
+
+
