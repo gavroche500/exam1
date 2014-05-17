@@ -8,7 +8,6 @@
 
 　　例）$> git clone https://github.com/gavroche500/exam1 /hogehoge/exam1
 
-=======
 4, 既存のファイルに加わった変更を登録したい
   コマンド
     git add /path/to/file
