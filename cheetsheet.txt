@@ -3,4 +3,7 @@
   コマンド
     git add /path/to/file
     git commit -m "COMMIT_MESSAGE"
+  説明
+    基本形は上記の通りで、addコマンドを実行後にcommitする。
+    addコマンドはこの形だとファイルを指定しているが、ディレクトリを指定するとそのディレクトリ毎コミット対象にできる。
 
