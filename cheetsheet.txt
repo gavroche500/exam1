@@ -23,14 +23,13 @@
   ――――――――――――――――――――――――――
 
 2.既に存在するリポジトリを手元に持ってきたい時
+  コマンド：
+    $ git clone <クローン元のリポジトリ> <クローン先>
 
-　コマンド：
-　　$> git clone <クローン元のリポジトリ> <クローン先>
+  説明：
+    既に存在するリポジトリをコピー（クローン）するためのコマンド。
 
-　説明：
-　　既に存在するリポジトリをコピー（クローン）するためのコマンド。
-
-　　例）$> git clone https://github.com/gavroche500/exam1 /hogehoge/exam1
+    例）$ git clone https://github.com/gavroche500/exam1 /hogehoge/exam1
 
 3.新しいファイルを管理に加えたい
   コマンド
@@ -75,15 +74,15 @@
   緊急の仕事とは別にブランチを作成し、そちらで作業を行う。
 
   コマンド
-    $> git checkout -b <hoge>
+    $ git checkout -b <hoge>
 
   説明
-    「git checkout」はブランチを切り替えるコマンド。
-    -bをつけることによって、新しく<hoge>ブランチを作成し、そこに移動する
+    「git checkout <hoge>」は位置を<hoge>ブランチに切り替えるコマンド。
+    -bをつけることによって、新しく<hoge>ブランチを作成し、そこに移動することになる。
 
   その他情報
     特定のコミットからブランチを作成するには、
-    $> git checkout -b <hoge> <some-commit>
+    $ git checkout -b <hoge> <some-commit>
 
 
 9, 直前のコミットメッセージのtypoに気付いた. 直したい
